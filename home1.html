@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<metadata charset="UTF-8">
+<link rel= "stylesheet" href="./css1.css">
+<meta name="author" content="Nikhil Shejwal">
+
+<metadata name="keywords" contents="lose or gain weight get in shape">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+<body>
+<div>
+<div id="wrapper">
+<div id="header">
+<ul class="navmain">
+  <li class="nav"><a href="#">Home</a></li>
+  <li class="nav"><a href="#">Workouts</a></li>
+  <li class="nav"><a href="#">Diet</a></li>
+  <li class="nav"><a href="#">Contact Me </a></li>
+</ul>
+
+<style>
+  .mySlides {display: none;}
+</style>
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="img_la.jpg" style="width:100%">
+  <img class="mySlides" src="img_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+
+<div id="content">
+<h2 class="why">Why fitness and physical activity important?</h2>
+<p class="whypara">Physical activity is essential to prevent and reduce risks of many diseases and improve physical and mental health. It can even help you live longer—research from the American Journal of Preventative Medicine indicates that regular exercise can add up to <strong> Five </strong> years to your life.
+Physical activity also keeps you in shape so you can enjoy leisure activities and safely perform work and home chores. It offers great mental and social benefits as well. The Lancet released a series of studies that attribute positive outcomes to physical activity, including “a sense of purpose and value, a better quality of life, improved sleep, and reduced stress, as well as stronger relationships and social connectedness.</p>
+
+<h2 class="risk"> facts </h2>
+<p class="riskpara">According to the Centers for Disease Control, exercise can reduce your risk of:
+<ul>
+<li>Heart disease</li>
+<li>Stroke</li>
+<li>High blood pressure</li>
+<li>Type 2 diabetes</li>
+<li>Obesity</li>
+<li>Depression</li>
+<li>Breast and colon cancer</li>
+<li>Osteoporosis</li>
+</ul>
+</p>
+</div>
+
+<div id="footer">
+  <p> Nikhil </p>
+</div>
+
+</body>
+</html> 
